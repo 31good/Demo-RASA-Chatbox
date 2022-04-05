@@ -1,0 +1,78 @@
+{
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 3,
+    "confused_with": {
+      "affirm": 1
+    }
+  },
+  "帮我选基金": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1-score": 0.75,
+    "support": 4,
+    "confused_with": {
+      "deny": 1
+    }
+  },
+  "thanks": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 1,
+    "confused_with": {}
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 3,
+    "confused_with": {
+      "帮我选基金": 1,
+      "thanks": 1
+    }
+  },
+  "基金查询": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "ask_all_service": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "deny": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1-score": 0.888888888888889,
+    "support": 4,
+    "confused_with": {}
+  },
+  "accuracy": 0.8,
+  "macro avg": {
+    "precision": 0.8395833333333333,
+    "recall": 0.84375,
+    "f1-score": 0.8006944444444444,
+    "support": 20
+  },
+  "weighted avg": {
+    "precision": 0.8516666666666666,
+    "recall": 0.8,
+    "f1-score": 0.7861111111111111,
+    "support": 20
+  }
+}

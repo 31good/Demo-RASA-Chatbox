@@ -1,0 +1,50 @@
+[
+  {
+    "text": "我可以干哪些事",
+    "intent": "ask_all_service",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9298445582389832
+    }
+  },
+  {
+    "text": "thanks",
+    "intent": "thanks",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5881946086883545
+    }
+  },
+  {
+    "text": "嘿",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8230679035186768
+    }
+  },
+  {
+    "text": "拜",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "帮我选基金",
+      "confidence": 0.5626909136772156
+    }
+  },
+  {
+    "text": "还行",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.3676416873931885
+    }
+  },
+  {
+    "text": "当然",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.600121021270752
+    }
+  }
+]

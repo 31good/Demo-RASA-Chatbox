@@ -1,0 +1,34 @@
+[
+  {
+    "text": "见到你很高兴",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.6478922963142395
+    }
+  },
+  {
+    "text": "拜",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "帮我选基金",
+      "confidence": 0.8366966247558594
+    }
+  },
+  {
+    "text": "拜拜",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.35250985622406006
+    }
+  },
+  {
+    "text": "同意",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.598478376865387
+    }
+  }
+]

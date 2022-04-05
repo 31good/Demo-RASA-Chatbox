@@ -1,0 +1,50 @@
+[
+  {
+    "text": "你能做什么",
+    "intent": "ask_all_service",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.513581395149231
+    }
+  },
+  {
+    "text": "我要投资",
+    "intent": "帮我选基金",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.4350578188896179
+    }
+  },
+  {
+    "text": "早",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "thanks",
+      "confidence": 0.34555938839912415
+    }
+  },
+  {
+    "text": "先这样吧",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7106410264968872
+    }
+  },
+  {
+    "text": "没事",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.900537371635437
+    }
+  },
+  {
+    "text": "可以",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7523254752159119
+    }
+  }
+]
