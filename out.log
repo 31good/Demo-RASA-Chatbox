@@ -1,0 +1,15 @@
+2021-07-08 20:54:30,025 [INFO ]  Starting Rasa server on http://localhost:5005
+2021-07-08 20:54:30,036 [INFO ]  Loading model models\20210707-035041.tar.gz...
+2021-07-08 20:54:36,291 [INFO ]  Loading model models\20210707-035041.tar.gz...
+2021-07-08 20:54:45,025 [INFO ]  Added 'MitieNLP' to component cache. Key 'MitieNLP-D:\jupyternotebook\example\data\total_word_feature_extractor.dat'.
+2021-07-08 20:54:45,026 [INFO ]  Loading Jieba User Dictionary at C:\Users\ALLEN\AppData\Local\Temp\tmp8_ogt650\nlu\component_1_JiebaTokenizer\userdict.txt
+2021-07-08 20:55:28,119 [INFO ]  Rasa server is up and running.
+2021-07-08 21:00:12,082 [ERROR]  User is not authenticated.
+2021-07-08 21:19:59,266 [ERROR]  User is not authenticated.
+2021-07-08 21:21:32,160 [ERROR]  User is not authenticated.
+2021-07-08 21:22:19,876 [ERROR]  User is not authenticated.
+2021-07-08 21:22:38,550 [ERROR]  User is not authenticated.
+2021-07-08 21:26:55,698 [ERROR]  User is not authenticated.
+2021-07-08 21:29:21,703 [ERROR]  User is not authenticated.
+2021-07-08 21:30:03,920 [ERROR]  User is not authenticated.
+2021-07-08 21:30:22,829 [ERROR]  User is not authenticated.

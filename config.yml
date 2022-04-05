@@ -1,0 +1,41 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: zh
+
+pipeline:
+  # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
+
+  - name: "MitieNLP"   #预训练词向量 可以用bert模型
+    model: "data/total_word_feature_extractor.dat"
+  - name: "JiebaTokenizer"  #分词器
+    dictionary_path: "data/dict"
+  - name: "MitieEntityExtractor"  #实体提取
+  - name: "EntitySynonymMapper"  #同义词
+  - name: "RegexFeaturizer"     #正则
+    "case_sensitive": False    #不判断字母大小写
+    "use_word_boundaries": False   #不用空格区分
+  - name: "MitieFeaturizer"    #特征
+  - name: "DIETClassifier"      #意图分类（提取器）
+    "model_confidence": linear_norm
+    entity_recognition: False #禁用实体提取防止重复
+  - name: FallbackClassifier #判断confidence
+    threshold: 0.7
+
+
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  # # No configuration for policies was provided. The following default policies were used to train your model.
+  # # If you'd like to customize them, uncomment and adjust the policies.
+  # # See https://rasa.com/docs/rasa/policies for more information.
+  - name: "MemoizationPolicy"    #story记忆
+    max_history: 3   #记忆上下文场的
+  - name: "RulePolicy"  #rules 必须
+    core_fallback_threshold: 0.3
+    core_fallback_action_name: "action_default_fallback"  #自定义action
+    enable_fallback_prediction: True
+  - name: TEDPolicy     #预测和实体感知
+    epochs: 200
+    max_history: 5    #记忆上下文场的
+    model_confidence: linear_norm

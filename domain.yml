@@ -1,0 +1,68 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 15
+  carry_over_slots_to_new_session: true
+intents:
+  - 帮我选基金
+  - ask_other_service
+  - 基金查询
+  - start_session
+  - stop
+  - goodbye
+  - nlu_fallback
+  - out_of_scope
+  - greet
+  - affirm
+  - deny
+  - thanks
+  - ask_all_service
+entities:
+  - Jijin
+  - last_service
+  - risk_level
+slots:
+  Jijin:
+    type: text
+    influence_conversation: true
+  risk_level:
+    type: categorical
+    influence_conversation: true
+    values:
+      - low
+      - medium
+      - high
+  last_service:
+    type: text
+    influence_conversation: true
+    auto_fill: false
+responses:
+  utter_did_that_help:
+    - text: 请问这对您有帮助吗?
+  utter_thanks:
+    - text: 很高兴帮助到您。
+  utter_out_of_scope:
+    - text: 暂时还不能处理这个问题，您可以换个说法或者联系人工客服...
+  utter_greet:
+    - text: 你好,我是...小助手
+actions:
+  - action_ask_Jijin
+  - action_ask_other_service
+  - action_ask_risk_level
+  - action_default_fallback
+  - action_service_information
+  - action_submit_XuanJijin_form
+  - utter_greet
+  - utter_thanks
+  - validate_Jijin_form
+  - validate_XuanJijin_form
+forms:
+  Jijin_form:
+    required_slots:
+      Jijin:
+        - type: from_entity
+          entity: Jijin
+  XuanJijin_form:
+    required_slots:
+      risk_level:
+        - type: from_entity
+          entity: risk_level
